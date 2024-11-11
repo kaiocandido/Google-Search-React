@@ -10,3 +10,5 @@ export const Input = styled.input``
 export const Nav = styled.nav``
 export const Ul = styled.ul``
 export const Li = styled.li``
+export const Container = styled.div``
+export const Main = styled.main``
