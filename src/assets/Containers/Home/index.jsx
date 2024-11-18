@@ -1,11 +1,13 @@
 import { Container, Form, Header, Img, Input, InputBox, Lado, Li, Main, Nav, Ul } from "./styles"
+import GoogleLogo from "../../../assets/google_logo.png"
+import firstImg from "../../../assets/turing1.jpg"
 
 export function Home() {
     return (
         <>
             <Header>
                 <InputBox>
-                    <Img></Img>
+                    <img src={GoogleLogo} alt="Google Logo" />
                     <Form action="">
                         <Input type="text" value={"Alan Turing"} name="search"></Input>
                         <span className="lnr lnr-magnifier" id="search-icon"></span>
@@ -57,7 +59,7 @@ export function Home() {
 
                 <Lado>
                     <div id="gallery-box">
-                        <img id="first-img" src="img/turing1.jpg" alt="Alan Turing 1" />
+                        <img src={firstImg} alt="Photo Profile" className="userPhoto" />
                         <div id="gallery">
                             <div id="gallery-img1"></div>
                             <div id="gallery-img2"></div>
