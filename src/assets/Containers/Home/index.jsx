@@ -1,4 +1,4 @@
-import { Container, Form, Header, Img, Input, InputBox, Li, Main, Nav, Ul } from "./styles"
+import { Container, Form, Header, Img, Input, InputBox, Lado, Li, Main, Nav, Ul } from "./styles"
 
 export function Home() {
     return (
@@ -55,28 +55,29 @@ export function Home() {
                     </div>
                 </Main>
 
-                <Anside>
+                <Lado>
                     <div id="gallery-box">
-                        <img id="first-img" src="img/turing1.jpg" alt="Alan Turing 1">
-                            <div id="gallery">
-                                <div id="gallery-img1"></div>
-                                <div id="gallery-img2"></div>
-                                <div id="gallery-img3"></div>
-                                <div id="gallery-img4"></div>
-                                <div id="gallery-img5"></div>
-                                <div id="gallery-img6"></div>
-                            </div>
-                            <a id="moreimg-btn" href="#"><span class="lnr lnr-picture"> </span>Mais imagens</a>
+                        <img id="first-img" src="img/turing1.jpg" alt="Alan Turing 1" />
+                        <div id="gallery">
+                            <div id="gallery-img1"></div>
+                            <div id="gallery-img2"></div>
+                            <div id="gallery-img3"></div>
+                            <div id="gallery-img4"></div>
+                            <div id="gallery-img5"></div>
+                            <div id="gallery-img6"></div>
+                        </div>
+                        <a id="moreimg-btn" href="#"><span className="lnr lnr-picture"> </span>Mais imagens</a>
                     </div>
+
                     <div id="about-box">
                         <div id="name-box">
                             <h3 id="name">Alan Turing</h3>
                             <p id="role">Matemático</p>
                         </div>
-                        <p class="about-text">Alan Mathison Turing foi um matemático, lógico, criptoanalista e cientista da computação britânico. Foi influente no desenvolvimento da ciência da computação e na formalização do conceito de algoritmo e computação com a máquina de Turing, desempenhando um papel importante na criação do computador moderno.</p>
-                        <p class="about-text"><span>Nascimento:</span> 23 de junho de 1912, Maida Vale, Londres, Reino Unido</p>
+                        <p className="about-text">Alan Mathison Turing foi um matemático, lógico, criptoanalista e cientista da computação britânico. Foi influente no desenvolvimento da ciência da computação e na formalização do conceito de algoritmo e computação com a máquina de Turing, desempenhando um papel importante na criação do computador moderno.</p>
+                        <p className="about-text"><span>Nascimento:</span> 23 de junho de 1912, Maida Vale, Londres, Reino Unido</p>
                     </div>
-                </Anside>
+                </Lado>
             </Container>
         </>
 
