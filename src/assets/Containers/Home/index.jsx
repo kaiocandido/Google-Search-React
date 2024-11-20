@@ -1,7 +1,8 @@
-import { Container, Form, Header, Img, Input, InputBox, Lado, Li, Main, Nav, Ul } from "./styles"
+import { Container, Form, Header, Img, Input, InputBox, Lado, Main, Nav } from "./styles"
 import GoogleLogo from "../../../assets/google_logo.png"
 import firstImg from "../../../assets/turing1.jpg"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faKeyboard, faMicrophone, faSearch } from '@fortawesome/free-solid-svg-icons';
 export function Home() {
     return (
         <>
@@ -10,23 +11,23 @@ export function Home() {
                     <img src={GoogleLogo} alt="Google Logo" />
                     <Form action="">
                         <Input type="text" value={"Alan Turing"} name="search"></Input>
-                        <span className="lnr lnr-magnifier" id="search-icon"></span>
-                        <span className="lnr lnr-keyboard" id="keyboard-icon"></span>
-                        <span className="lnr lnr-mic" id="mic-icon"></span>
+                        <span className="lnr lnr-magnifier" id="search-icon"><FontAwesomeIcon icon={faSearch} className="icon" /></span>
+                        <span className="lnr lnr-keyboard" id="keyboard-icon"><FontAwesomeIcon icon={faKeyboard} className="icon" /></span>
+                        <span className="lnr lnr-mic" id="mic-icon"><FontAwesomeIcon icon={faMicrophone} className="icon" /></span>
                     </Form>
                 </InputBox>
 
                 <Nav>
-                    <Ul id="links-list">
-                        <Li class="active-link"></Li>
-                        <Li><a href="#"><span className="lnr lnr-picture"></span> Imagens</a></Li>
-                        <Li><a href="#"><span className="lnr lnr-tag"></span> Shopping</a></Li>
-                        <Li><a href="#"><span className="lnr lnr-map-marker"></span> Maps</a></Li>
-                        <Li><a href="#"><span className="lnr lnr-film-play"></span> Vídeos</a></Li>
-                        <Li><a href="#">Mais</a></Li>
-                        <Li><a href="#">Configurações</a></Li>
-                        <Li><a href="#">Ferramentas</a></Li>
-                    </Ul>
+                    <ul id="links-list">
+                        <li className="active-link"></li>
+                        <li><a href="#"><span className="lnr lnr-picture"></span>Imagens</a></li>
+                        <li><a href="#"><span className="lnr lnr-tag"></span>Shopping</a></li>
+                        <li><a href="#"><span className="lnr lnr-map-marker"></span>Maps</a></li>
+                        <li><a href="#"><span className="lnr lnr-film-play"></span>Vídeos</a></li>
+                        <li><a href="#">Mais</a></li>
+                        <li><a href="#">Configurações</a></li>
+                        <li><a href="#">Ferramentas</a></li>
+                    </ul>
                 </Nav>
             </Header>
 
@@ -68,7 +69,7 @@ export function Home() {
                             <div id="gallery-img5"></div>
                             <div id="gallery-img6"></div>
                         </div>
-                        <a id="moreimg-btn" href="#"><span className="lnr lnr-picture"> </span>Mais imagens</a>
+                        <a id="moreimg-btn" href="#"><span className="lnr-picture"> </span>Mais imagens</a>
                     </div>
 
                     <div id="about-box">
@@ -77,7 +78,7 @@ export function Home() {
                             <p id="role">Matemático</p>
                         </div>
                         <p className="about-text">Alan Mathison Turing foi um matemático, lógico, criptoanalista e cientista da computação britânico. Foi influente no desenvolvimento da ciência da computação e na formalização do conceito de algoritmo e computação com a máquina de Turing, desempenhando um papel importante na criação do computador moderno.</p>
-                        <p className="about-text"><span>Nascimento:</span> 23 de junho de 1912, Maida Vale, Londres, Reino Unido</p>
+                        <p className="about-text"><span className="spantext">Nascimento:</span> 23 de junho de 1912, Maida Vale, Londres, Reino Unido</p>
                     </div>
                 </Lado>
             </Container>
