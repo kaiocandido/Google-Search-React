@@ -11,6 +11,8 @@ Este é um projeto que simula a **tela de pesquisa do Google**, desenvolvido com
 <br>
 <a href="https://google-search-react-brown.vercel.app/">Google Search</a>
 <br>
+<br>
+<br>
 ## Tecnologias Utilizadas
 
 - **HTML5**: Estrutura da página web.
